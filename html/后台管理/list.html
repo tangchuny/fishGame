@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>管理中心</title>
+<link href="css/public.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+<div id="dcWrap"> <div id="dcHead">
+ <div id="head">
+  <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+  <div class="nav">
+   <ul class="navRight">
+    <li class="noLeft">您好，汤汤(tang),级别(渔民)
+    </li>
+    <li class="noRight"><a href="login.php?rec=logout">退出</a></li>
+   </ul>
+  </div>
+ </div>
+</div>
+<!-- dcHead 结束 --> <div id="dcLeft"><div id="menu">
+ <ul class="top">
+  <li><a href="index.html"><i class="home"></i><em>果园首页</em></a></li>
+ </ul>
+ <ul>
+  <li><a href="list.html"><i class="nav"></i><em>果园生长记录</em></a></li>
+  <li><a href="list.html"><i class="show"></i><em>捕鱼记录</em></a></li>
+  <li><a href="list.html"><i class="page"></i><em>偷鱼记录</em></a></li>
+  <li><a href="list.html"><i class="nav"></i><em>果园生长记录</em></a></li>
+  <li class="cur"><a href="detail.html"><i class="show"></i><em>捕鱼记录</em></a></li>
+  <li><a href="list.html"><i class="page"></i><em>偷鱼记录</em></a></li>
+ </ul>
+   <ul>
+  <li><a href="list.html"><i class="productCat"></i><em>交易中心</em></a></li>
+  <li><a href="list.html"><i class="system"></i><em>系统设置</em></a></li>
+ </ul>
+</div></div>
+ <div id="dcMain">
+   <!-- 当前位置 -->
+<div id="urHere">DouPHP 管理中心 </div> 
+<div id="index" class="mainBox" style="padding-top:18px;height:auto!important;height:550px;min-height:550px;">
+    
+   <form name="action" method="post" action="">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+        <th width="22" align="center">
+        <input name='chkall' type='checkbox' id='chkall' onclick='selectcheckbox(this.form)' value='check'></th>
+        <th width="40" align="center">编号</th>
+        <th align="left">种类</th>
+        <th width="150" align="center">类型</th>
+       <th width="80" align="center">日期</th>
+        <th width="80" align="center">操作</th>
+      </tr>
+            <tr>
+        <td align="center"><input type="checkbox" name="checkbox[]" value="4" /></td>
+        <td align="center">4</td>
+        <td><a href="product.php?rec=edit&id=4">Amazon Kindle电子书阅读器</a></td>
+        <td align="center"><a href="product.php?cat_id=5">平板电脑</a></td>
+        <td align="center">2013-06-26</td>
+        <td align="center">
+                  <a href="product.php?rec=edit&id=4">编辑</a> | <a href="product.php?rec=del&id=4">删除</a>
+                 </td>
+      </tr>
+            <tr>
+        <td align="center"><input type="checkbox" name="checkbox[]" value="3" /></td>
+        <td align="center">3</td>
+        <td><a href="product.php?rec=edit&id=3">魅族MX2智能手机</a></td>
+        <td align="center"><a href="product.php?cat_id=1">电子数码</a></td>
+        <td align="center">2013-06-26</td>
+        <td align="center">
+                  <a href="product.php?rec=edit&id=3">编辑</a> | <a href="product.php?rec=del&id=3">删除</a>
+                 </td>
+      </tr>
+            <tr>
+        <td align="center"><input type="checkbox" name="checkbox[]" value="2" /></td>
+        <td align="center">2</td>
+        <td><a href="#">苹果iPhone 5手机</a></td>
+        <td align="center"><a href="product.php?cat_id=4">智能手机</a></td>
+        <td align="center">2013-06-26</td>
+        <td align="center">
+                  <a href="product.php?rec=edit&id=2">编辑</a> | <a href="product.php?rec=del&id=2">删除</a>
+                 </td>
+      </tr>
+            <tr>
+        <td align="center"><input type="checkbox" name="checkbox[]" value="1" /></td>
+        <td align="center">1</td>
+        <td><a href="product.php?rec=edit&id=1">iPad平板电脑</a></td>
+        <td align="center"><a href="product.php?cat_id=5">平板电脑</a></td>
+        <td align="center">2013-06-26</td>
+        <td align="center">
+                  <a href="product.php?rec=edit&id=1">编辑</a> | <a href="product.php?rec=del&id=1">删除</a>
+                 </td>
+      </tr>
+          </table>
+    
+    </form>
+    <div class="pager">总计 15 个记录，共 1 页，当前第 1 页 | <a href="product.php?page=1">第一页</a> 上一页 下一页 <a href="product.php?page=1">最末页</a></div>   
+</div>
+ </div>
+ <div class="clear"></div>
+<div id="dcFooter">
+ <div id="footer">
+  <div class="line"></div>
+  <ul>
+   版权所有 © 2013-2015，并保留所有权利。
+  </ul>
+ </div>
+</div><!-- dcFooter 结束 -->
+</body>
+</html>

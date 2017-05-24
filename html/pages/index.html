@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body class="bg">
+	<div class="wrap ">
+		<div class="top">
+			<ul>
+				<li class="t1"><img src="images/t1.png"/><span>总量：100</span></li>
+				<li class="t2"><img src="images/t2.png"/><span>渔船数：100</span></li>
+				<li class="t3"><img src="images/t3.png"/><span>船员数：200 </span></li>
+				<li class="t4"><img src="images/t4.png"/><span>收益：300</span></li>
+			</ul>
+		</div>
+		<div class="big_boat_box">
+			<div class="big_boat_2">
+				<div  class="b1 boat addToBox" title="大船" id='b1' >
+					<p class="arr"></p>
+				</div>
+				<div class="b2 boat addToBox" target="大船" id='b2'>
+				</div>
+				<div class="b3 boat addToBox" target="大船" id='b3'></div>
+				<div class="b4 boat addToBox" target="大船" id='b4'>
+					<p class="arr"></p>
+				</div>
+				<div class="b5 boat addToBox" target="大船" id='b5'></div>
+			</div>
+		</div>
+		<div class="small_boat_box">
+			<div class="small_boat_2 ">
+				<div class="sb1 boat addToBox" target="船" id='sb1'>
+					<span class="man"></span>
+				</div>
+				<div class="sb2 boat addToBox" target="船"  id='sb2'></div>
+				<div class="sb3 boat addToBox" target="船"  id='sb3'></div>
+				<div class="sb4 boat addToBox" target="船"  id='sb4'>
+					<span class="man"></span>
+				</div>
+				<div class="sb5 boat addToBox" target="船"  id='sb5'></div>
+			</div>
+			<div class="small_boat_2 ">
+				<div class="sb6 boat addToBox" target="船"  id='sb6'>
+					<span class="man"></span>
+				</div>
+				<div class="sb7 boat addToBox" target="船"  id='sb7'></div>
+				<div class="sb8 boat addToBox" target="船"  id='sb8'></div>
+				<div class="sb9 boat addToBox" target="船"  id='sb9'>
+					<span class="man"></span>
+				</div>
+				<div class="sb10 boat addToBox" target="船"  id='sb10'></div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav1" title="买船" data-tool="1" id='nav1'></div>
+			<div class="nav3" title="船舱" data-tool="3" id='nav3'>
+				<span class="action_fish"></span>
+				<span class="caret-icon num">1</span></div>
+			<div class="nav2" titie="捕鱼" data-tool="2" id='nav2' ></div>
+			<div class="nav4" titie="偷鱼" data-tool="4" id='nav4' ></div>
+		</div>
+		<div class="refesh">
+		</div>
+	</div>
+	<!-- 自定义comfirm提示弹窗HTML -->
+<div class="modal-comfirm" id="up">
+  <div class="content">
+  	<p class="close"></p>
+  	 <p style="text-align:center;margin-top: -70px;" ><img src="images/big_boat.png" width="50%"></p>
+    	<p class="mg-t1">名称:捕鱼大渔船</p>
+       <p class="mg-t1 ">价格：<span class="red">2030RMB</span></p>
+    <a href="javascript:void(0)" class="btn-agree" style="width: 100%;">购买该渔船</a>
+  </div>
+</div>
+<!-- 自定义comfirm提示弹窗JS -->
+	<script type="text/javascript">
+    /**
+     * @param1 添加按钮的css选择器
+     * @param2 数量的css选择器
+     */
+     new Parabola("#get_fish .addToBox",".caret-icon");
+     new Parabola("#get_net .addToBox",".caret-icon");
+  </script>
+
+</body>
+</html>
